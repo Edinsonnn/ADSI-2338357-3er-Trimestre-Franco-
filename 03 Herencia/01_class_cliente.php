@@ -70,18 +70,4 @@ class Cliente
         return $this;
     }
 
-    public function subsidioTransp()
-    {
-        if ($this->salario >= 1900000) {
-            $subs = $salario * 0.23;
-            $newsalario = $salario + $subs;
-            echo ("Su salario con el subsidio (23%) de transporte es:" . $newsalario);
-        }else{
-            $this->salario;
-            $sl = $salario;
-            $subs2 = $sl * 0.26;
-            $newsalario = $sl + $subs2;
-            echo ("Su salario con el subsidio (26%) de transporte es:" . $newsalario); 
-        }
-    }
 }//end class

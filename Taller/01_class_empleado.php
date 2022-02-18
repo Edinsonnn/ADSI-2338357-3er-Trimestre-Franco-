@@ -1,86 +1,83 @@
 <?php
-
-require_once"01_class_persona.php";
-
-class Empleado extends Persona
+class Empleado
 {
     //Atributos
-    public $cargo;
-    public $salario;
+    private $nombre;
+    private $celular;
+    private $cargo;
+    public $sueldo;
+
     //Contructor
-    function __construct(int $vr_cedula, string $vr_nombres, $vr_edad, $vr_salario, $vr_celular, $vr_cargo)
+    function __construct(string $vr_nombre, int $vr_celular, String $vr_cargo, $vr_sueldo)
     {
-       
-       parent::__construct($vr_cedula, $vr_nombres, $vr_edad, $vr_celular);
-      $this->cargo=$vr_cargo;
-      $this->salario=$vr_salario;
-    
+        $this->nombre = $vr_nombre;
+        $this->celular = $vr_celular;
+        $this->cargo = $vr_cargo;
+        $this->sueldo = $vr_sueldo;
     } //end constructor
 
-    public function getDatospersonales()
+    public function getDatos()
     {
-        $arrayDatospersonales = array(
-            'Cedula: ' => $this->cedula,
-            'Nombres:' => $this->nombres,
-            'Email: ' => $this->email,
-            'Fecha de regitro:' => $this->fecha_reg,
-            'Clave:' => $this->pasword,
-
+        $arrayDatos = array(
+            'Nombre: ' => $this->nombre,
+            'Celular: ' => $this->celular,
+            'Cargo: ' => $this->cargo,
+            'Sueldo: ' => $this->sueldo,
         );
-        return $arrayDatospersonales;
+        return $arrayDatos;
     }
-    public function Credito()
+
+    public function getDtosEmpleado()
     {
-        if ($this->salario >= 1000000) {
-            $cred = ("El trabajador puede acceder a un prestamo de $2.000.000 con un 1.5% de interes");
+        $arrayDatosEmpleado = array(
+            'Cargo: ' => $this->cargo,
+            'Sueldo: ' => $this->sueldo
+        );
+        return $arrayDatosEmpleado;
+    }
+
+    public function PagoRetencion()
+    {
+        $ps=$this->sueldo;
+        if ($ps >= 3750000) {
+            $pago = $ps * 0.09;
+            echo ("El empleado debe pagar por retencion en la fuente un total de : " . $pago);
         } else {
-            $cred = ("El trabajador No cumple con los requisitos");
+            echo ("El empleado no debe pagar por retencion en la fuente °_°");
         }
-        return $cred;
     }
 
-
-    //Get the value of cedula
-    public function getCedula()
+    // Get the value of cargo
+    public function getCargo()
     {
-        return $this->cedula;
+        return $this->cargo;
     }
 
-    // Get the value of email
-    public function getEmail()
+    // Get the value of nombre
+    public function getNombre()
     {
-        return $this->email;
+        return $this->nombre;
     }
 
-    //Set the value of cedula
-    public function setCedula($v_cedula)
+    //Get the value of celular
+    public function getCelular()
     {
-        $this->cedula = $v_cedula;
+        return $this->celular;
+    }
+
+    //Set the value of nombre
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
 
         return $this;
     }
 
-    // Set the value of email
-    public function setEmail($v_email)
+    // Set the value of celular
+    public function setCelular($celular)
     {
-        $this->email = $v_email;
+        $this->celular = $celular;
 
         return $this;
     }
-
-   /* public function subsidioTransp()
-    {
-        if ($this->salario >= 1900000) {
-            $subs = $salario * 0.23;
-            $newsalario = $salario + $subs;
-            echo ("Su salario con el subsidio (23%) de transporte es:" . $newsalario);
-        }else{
-            $this->salario;
-            $sl = $salario;
-            $subs2 = $sl * 0.26;
-            $newsalario = $sl + $subs2;
-            echo ("Su salario con el subsidio (26%) de transporte es:" . $newsalario); 
-        }
-    }*/
-    
 }//end class
