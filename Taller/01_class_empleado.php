@@ -6,6 +6,7 @@ class Empleado
     private $celular;
     private $cargo;
     public $sueldo;
+    static $auxilio;
 
     //Contructor
     function __construct(string $vr_nombre, int $vr_celular, String $vr_cargo, $vr_sueldo)
@@ -81,3 +82,4 @@ class Empleado
         return $this;
     }
 }//end class
+?>
