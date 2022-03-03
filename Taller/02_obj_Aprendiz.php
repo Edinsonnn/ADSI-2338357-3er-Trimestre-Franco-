@@ -1,6 +1,6 @@
 <?php
  require_once("02_Aprendiz_class.php");
- $objAprendiz = new Aprendiz(124325355, "Frued simon", "Aroca", "Fundamentos de la programacion", 5.0, 3.0, 5.0);
+ $objAprendiz = new Aprendiz(124325355, "Frued simon", "Aroca", "Fundamentos de la programacion", 4.0, 5.0, 5.0);
  echo "Nombre: ".$objAprendiz->getNombres().("<br>");
  print_r("<pre>");
 print_r($objAprendiz);
