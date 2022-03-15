@@ -66,6 +66,3 @@ public function deletePasajero($idPasajero){
 }
 
 }//End class
-
-
-?>
