@@ -1,6 +1,7 @@
 <?php
 require_once("../../Templates/templateIndex.php");
 require_once("../Modelo/pasajero.php");
+$modeloPasajero = new Pasajero();
 ?>
 
 <h2>Listado de Pasajero</h2>
@@ -11,20 +12,18 @@ require_once("../Modelo/pasajero.php");
             <th scope="col">#</th>
             <th scope="col">Nombres </th>
             <th scope="col">Email </th>
-            <th scope="col">TTelefono</th>
+            <th scope="col">Telefono</th>
         </tr>
     </thead>
-<table>
-    <thead>
-        <tbody>
+    <tbody>
             <?php
-            $verPasajeros = $modeloPasajero->getPasajeros();
+            $verPasajeros = $modeloPasajero->getPasajero();
             if ($verPasajeros != Null){
                 foreach ($verPasajeros as $listarPasajeros) {
                     
             ?>
             <tr>
-                <th scope="row">11<?= $listarPasajeros['idPasajeros'];?> </th>
+                <th scope="row">1<?= $listarPasajeros['idPasajero'];?> </th>
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>@mdo</td>
@@ -36,6 +35,5 @@ require_once("../Modelo/pasajero.php");
                 }
             }
             ?>
-        </tbody>
-    </thead>
+    </tbody>
 </table>
