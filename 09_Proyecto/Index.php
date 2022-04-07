@@ -10,7 +10,7 @@
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a class="navbar-brand" href="#"><img src="Imagen/logo.png" width="60" height="60" alt="CitricApp"></a></li>
+          <li><a class="navbar-brand" href="#"><img src="Imagen/logo.png" width="60" height="60" style="" alt="CitricApp"></a></li>
           <li><a href="#" class="nav-link px-2 text-white" _msthash="1633541" _msttexthash="136006"><h1><b>CitricApp</b></h1></a></li>
           
         </ul>
@@ -86,6 +86,11 @@
     </div>
   </div>
   </div>
+  <br>
+    <br> 
+    <br>
+    <br>
+    <br>
   <div class="p-3 bg-dark text-white">
         <footer>
             <div class="container">

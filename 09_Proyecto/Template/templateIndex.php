@@ -11,6 +11,8 @@
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   
   <title>CitricApp.com</title>
 

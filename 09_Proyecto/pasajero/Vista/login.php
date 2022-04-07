@@ -2,7 +2,7 @@
 require_once("../../Template/templateFormulario.php");
 ?>
 <header class="p-3 bg-dark text-white">
-    <div class="container">
+    <div >
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
                 <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap" _mstaria-label="138918">
@@ -22,11 +22,11 @@ require_once("../../Template/templateFormulario.php");
                     _msttexthash="264433">Volver</button></a>
         </div>
 </header>
-<center>
-   
-    <div class="formulario">
+
+    <div class="container">
         <form action="../Controlador/login.php" method="POST">
             <br>
+            <center> <b> Inicio de Sesion</b></center>
             <div class="mb-4">
                 <label> Email</label>
                 <input type="text" name="email" placeholder="@correo.com" class="form-control" required>
@@ -40,10 +40,22 @@ require_once("../../Template/templateFormulario.php");
            <center><button type="submit" name="btn_enviar" class="btn btn-success">Enviar</button></center> 
         </form>
     </div>
-</center>
-<div>
-
-</div>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
     <footer>
         <div class="p-3 bg-dark text-white">
         <div class="container">
@@ -59,7 +71,7 @@ require_once("../../Template/templateFormulario.php");
                 <div class="col-sm-6 col-md-3 item">
                     <h3>About</h3>
                     <ul>
-                        <li><a href="#">Company</a></li>
+                        <li><a href="#">CitricApp</a></li>
                         <li><a href="#">Team</a></li>
                         <li><a href="#">Careers</a></li>
                     </ul>
@@ -75,7 +87,7 @@ require_once("../../Template/templateFormulario.php");
                             class="icon ion-social-snapchat"></i></a><a href="#"><i
                             class="icon ion-social-instagram"></i></a></div>
             </div>
-            <p class="copyright">Company Name © 2018</p>
+            <p class="copyright">CitricApp © 2022</p>
         </div>
         </div>
     </footer>

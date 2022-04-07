@@ -1,0 +1,6 @@
+.salir{
+    color: aliceblue;
+}
+.cont{
+    min-height: calc(100vh - 200px);
+  }

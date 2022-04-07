@@ -8,8 +8,8 @@
             $this->db = parent::__construct();
         }
 
-        public function insertarUsuario($nombres, $apellidos, $cedula, $email, $telefono,  $password, $tipoRol, $certificadoAgricultor){
-            $tabla = $this->db->prepare("INSERT INTO usuario(nombres, apellidos, cedula, email, telefono, password, tipousuario_id, certificadoAgricultor)
+        public function insertarUsuario($nombres, $apellidos, $cedula, $email, $telefono,  $password, $certificadoAgricultor, $tipoRol){
+            $tabla = $this->db->prepare("INSERT INTO usuario(nombres, apellidos, cedula, email, telefono, password, certificadoAgricultor, tipousuario_id, )
             VALUES(:nombres, :apellidos, :cedula, :email, :telefono, :password, :certificadoAgricultor :tipousuario_id");
             $tabla->bindParam(':nombres', $nombres);
             $tabla->bindParam(':apellidos', $apellidos);

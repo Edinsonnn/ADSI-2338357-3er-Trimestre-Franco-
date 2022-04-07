@@ -1,0 +1,51 @@
+/* *{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}*/
+.header{
+    background-color: orange;
+    height: 100px;
+}
+.form {
+    border:1px solid #990000;
+    width:450px;
+    margin:auto;
+}
+legend{
+    font-weight:bold;
+    font-size:12px;
+}
+ol{
+    list-style:none;
+}
+ol li{
+    padding-bottom:5px;
+}
+ol li label{
+    width:120px;
+    float:left;
+    text-align:left;
+}
+input{
+    border:1px solid #CCCCCC;
+}
+input{
+    padding:3px;
+    color:#FFFFFF;
+    background-color:#990000;
+    border:1px solid #000000;
+}
+body{
+    background-color: #CCCCCC;
+}
+footer{
+    background-color: orange;
+    color: #000000;
+}
+.container{
+    min-height: calc(100vh - 200px)
+}
